@@ -25,14 +25,15 @@ public class DriverFactory {
 		}else if(browserType.equalsIgnoreCase("Chrome")){
 			LOG.info("Starting ChromeWebdriver");
 			System.setProperty("webdriver.chrome.driver", "C:/dev/udemy/SeleniumUmdey/src/webdrivers/ver/chromedriver.exe");
-			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--test-type");
-			options.addArguments("--ignore-certificate-errors");
-			capabilities.setCapability("chrome.binary", "<Path to binary>");
-			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-		
-			return new ChromeDriver(capabilities);
+//			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+//			ChromeOptions options = new ChromeOptions();
+//			options.addArguments("--test-type");
+//			options.addArguments("--ignore-certificate-errors");
+//			capabilities.setCapability("chrome.binary", "<Path to binary>");
+//			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+//		
+			return new ChromeDriver();
+//			return new ChromeDriver(capabilities);
 		}else if(browserType.equalsIgnoreCase("Edge")){
 			LOG.info("Starting EdgeWebdriver");
 			System.setProperty("webdriver.edge.driver", "C:/dev/udemy/SeleniumUmdey/src/webdrivers/MicrosoftWebDriver.exe");
