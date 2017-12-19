@@ -10,7 +10,7 @@ driver.switchTo.window(windows,get(0))
 
 Skapa en construktor till classen som tex.
 -
-#######################################################################
+\n
 public class AppTest   
 {
 WebDriver driver;	
@@ -26,9 +26,8 @@ public AppTest(WebDriver driver){
 	
 }
 }
-#######################################################################
 
-Install cucumber on Eclipse
+#Install cucumber on Eclipse
 http://cucumber.github.com/cucumber-eclipse/update-site/
 
 #mvn
